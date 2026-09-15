@@ -15,7 +15,7 @@ const Certification = ({ certification }: IProps) => {
                 {certification.map((certificate: HirelyCertificate) =>
                     <div className="flex flex-col my-6" key={certificate._id}>
                         <div onClick={() => window.open(certificate.credentialUrl!, "_blank")} className="text-start">
-                            <h4 className="text-xs md:text-sm font-semibold tracking-tight">{certificate.name}</h4>
+                            <h6 className="text-xs md:text-sm font-semibold tracking-tight">{certificate.name}</h6>
                             <p className="text-xs font-medium text-gray-500">
                                 {certificate.issuer} · {new Date(certificate.issueDate!).getFullYear()}
                             </p>

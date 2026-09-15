@@ -18,6 +18,7 @@ const Work = ({ works }: IProps) => {
                                 <img
                                     className="rounded-full border border-gray-200 size-10 object-center object-cover"
                                     src={work.companyImage?.url}
+                                    alt={work.companyName}
                                     draggable="false"
                                 />
                             </div>

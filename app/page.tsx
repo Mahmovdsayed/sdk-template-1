@@ -51,7 +51,6 @@ export async function generateMetadata(): Promise<Metadata> {
     },
 
     description,
-
     keywords: [
       name,
       position,
@@ -142,7 +141,7 @@ export default async function Home() {
   const fullName = [profile.firstName, profile.lastName].filter(Boolean).join(" ");
   const name = fullName || userName || "Professional";
   const location = [profile.city, profile.country].filter(Boolean).join(", ");
-  const canonical = `${SITE_URL}/${userName}`;
+  const canonical = `${SITE_URL}`;
 
   const jsonLd = {
     "@context": "https://schema.org",

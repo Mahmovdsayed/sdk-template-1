@@ -17,10 +17,11 @@ const Education = ({ education }: IProps) => {
                                     className="rounded-full border border-gray-200 size-10 object-center object-cover"
                                     src={edu.institutionImage?.url}
                                     draggable="false"
+                                    alt={edu.institution}
                                 />
                             </div>
                             <div className="text-start">
-                                <h4 className="text-xs md:text-sm font-semibold tracking-tight text-wrap">{edu.degree} in {edu.fieldOfStudy}</h4>
+                                <h5 className="text-xs md:text-sm font-semibold tracking-tight text-wrap">{edu.degree} in {edu.fieldOfStudy}</h5>
                                 <p className="text-xs font-medium text-gray-500">
                                     {edu.institution} · {new Date(edu.startDate!).getFullYear()}-{edu.isCurrent ? "NOW" : new Date(edu.endDate!).getFullYear()}
                                 </p>
