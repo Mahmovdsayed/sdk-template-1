@@ -1,6 +1,6 @@
 const Footer = () => {
     return <>
-        <footer className="border border-gray-200 border-dashed py-8">
+        <footer className="border-t border-l border-r border-gray-200 border-dashed py-8">
             <div className="container mx-auto px-4">
                 <img
                     src="/mahmoud-sayed.svg"
